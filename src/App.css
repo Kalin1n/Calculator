@@ -1,80 +1,40 @@
-body{
-  background-color: #E1E0DF;
+.bgc{
+  background-color: #5a5c30;
+  height: 100%;
 }
-.calculator-body{
 
-  	box-shadow: 10px 12px 4px  #999;
-  	-moz-box-shadow: 10px 12px 4px  #999;
-  	-webkit-box-shadow: 10px 12px 4px  #999;
-  	-o-box-shadow: 10px   12px 4px  #999;
-  border-radius: 5px;
-  padding: 15px;
-  max-width: 500px;
-  margin: 0 auto;
-  margin-top: 10%;
-  background-color: #9E9E9E;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
+.numbers{ 
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 30% 30% 30%;
+  grid-column-gap: 20px;
+  grid-row-gap : 20px;
+  grid-template-rows: auto;
+}
 
-}
-input{
-  padding-left:-40px;
-}
 button{
-  cursor: pointer;
-  box-shadow: 0 9px black;
-}
-button:active {
-  box-shadow: 0 5px black;
-  transform: translateY(4px);
-}
-
-.calculator-body>input{
-  height:50px;
-  box-shadow: 0 9px #999;
-  font-size: 25px;
-  margin-bottom: 10px;
-
-  border: 2px solid black;
-  border-radius: 5px;
-}
-.calculator-buttons{
-  display: flex;
-
-}
-.calculator-buttons button{
-  font-size: 25px;
-  min-height: 40px;
-  max-width: 40px;
-  margin: 10px;
-}
-.numbers-buttons{
-  width:700px;
+  border: 1px solid black;
+  background-color: #c2940c;
+  padding: 30px;
+  font-size: 2vw;
+  border-radius:10px;
 }
 
-.numbers-buttons button{
-  min-width: 100px;
-  background-color: white;
-  border: 2px solid orange;
-  border-radius: 5px;
-}
-.main-buttons{
-  font-size: 25px;
-  border:0;
-  background-color: white;
-  border: 2px solid orange;
-  border-radius: 5px;
+.screen{
   margin-top: 10px;
+  height: 2vw;
+  font-size: 1.5vw;
+  padding: 10px;
+  margin-bottom: 20px;
+  text-align: right;
+  margin-left: auto;
+  margin-right: auto;
 }
-.action-buttons{
 
+.actions{
   display: flex;
-  flex-direction: column;
-}
-.action-buttons button{
-  width: 300px;
-  background-color: white;
-  border: 2px solid orange;
-  border-radius: 5px;
+  flex-direction: row;
+  justify-content: space-around;
 }
